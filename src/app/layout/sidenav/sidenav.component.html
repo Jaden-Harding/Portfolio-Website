@@ -1,0 +1,18 @@
+<mat-drawer-container>
+  <button mat-mini-fab color="accent" aria-label="Icon button with a menu icon" class="navbut-container" (click)="drawer.toggle()"> 
+    <mat-icon>menu</mat-icon>
+  </button>
+    <mat-drawer #drawer [position]="'end'" class="sidenav">
+        <mat-nav-list>
+            <a mat-list-item (click)="home(); drawer.close();" style="cursor: pointer;" >
+                <mat-icon class="navicon">home</mat-icon>
+                <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Home</span>
+              </a>
+              <a mat-list-item (click)="gitProjects(); drawer.close();" style="cursor: pointer; margin-top: 20px;" >
+                <mat-icon class="navicon">article</mat-icon>
+                <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Projects</span>
+              </a>
+        </mat-nav-list>
+    </mat-drawer>
+    <ng-content></ng-content>
+</mat-drawer-container>

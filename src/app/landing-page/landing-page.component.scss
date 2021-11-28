@@ -16,26 +16,32 @@
 }
 
 .name-container {
+    text-shadow: 3px 3px 2px black;
     background-color: #b6b4b2; 
     width: fit-content; 
-    font-size: 40px; 
+    font-size: 50px; 
     display: block; 
     padding: 20px; 
-    z-index: 3; 
-    margin-top: -25px;  
+    z-index: 3;   
+    margin: -15px auto;
     position: relative; 
     text-transform: uppercase; 
     overflow-wrap: break-word; 
-    text-align: center; 
     line-height: 40px;
 }
 
-.navbut-container {
-    position: fixed; 
-    right: 10px; 
-    top: 10px
+.about {
+    margin-top: 5rem;
+    padding: 30px;
+    display: block;
+    background-color: #b6b4b2;
 }
 
 .text-container {
-
+    width: fit-content;
+    display: block;
+    line-height: 30px;
+    overflow-wrap: break-word;
+    box-sizing: inherit;
+    max-width: 800px;
 }
