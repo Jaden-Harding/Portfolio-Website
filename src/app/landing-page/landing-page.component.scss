@@ -28,13 +28,17 @@
     text-transform: uppercase; 
     overflow-wrap: break-word; 
     line-height: 40px;
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
 }
 
 .about {
     margin-top: 5rem;
     padding: 30px;
     display: block;
-    background-color: #b6b4b2;
+    background-color: #424242;
+    border-radius: 1%;
+    // border: 3px solid rgb(255, 255, 255);
 }
 
 .text-container {

@@ -10,4 +10,22 @@
     position: relative; 
     overflow-wrap: break-word; 
     line-height: 40px;
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.img-profile{
+    max-height: 45px; 
+    width: 45px; 
+    max-width: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card {
+    max-width: 600px;
+}
+  
+.header-image {
+    background-size: cover;
 }

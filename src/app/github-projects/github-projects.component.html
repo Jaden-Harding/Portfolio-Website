@@ -1,7 +1,26 @@
 <app-sidenav>
     <app-flex-layout-wrapper>
-        <div fxLayout="column">
-            <div class="name-container" style="margin-top: 20px;">Github Projects</div>
+        <div fxLayout="column" *ngIf="user">
+            <div class="name-container" style="margin-top: 20px; margin-bottom: 15px;">Github Projects</div>
+            <div *ngFor="let repo of repos; let i = index" style="margin-top: 25px;">
+                <mat-card class="card">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image"><img class="img-profile" [src]="user.avatar_url"></div>
+                        <mat-card-title style="font-size: 22px; font-weight: bold;" >{{repo.name}}</mat-card-title>
+                        <mat-card-subtitle style="text-align: left;" >{{user.login}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="'assets/images/' + repo.name + '.png'" [alt]="'Repo:' + repo.name">
+                    <mat-card-content>
+                        <p>{{repo.description}}</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <a [href]="repo.html_url" mat-button style="border: 1px solid white;" >
+                            <span style="margin-right: 5px;" >GitHub</span>
+                            <mat-icon class="navicon" style="font-size: 18px; height: 18px; width: 18px;" >link</mat-icon>                       
+                        </a>          
+                    </mat-card-actions>
+                </mat-card>              
+            </div>
         </div>
     </app-flex-layout-wrapper>
-</app-sidenav>
+</app-sidenav> 

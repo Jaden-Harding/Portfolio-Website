@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../services/github.service';
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Component({
   selector: 'app-github-projects',
@@ -7,7 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubProjectsComponent implements OnInit {
 
-  constructor() { }
+  user: any;
+  repos: any;
+
+
+  constructor(private githubService: GithubService) {
+    this.githubService.getUser().subscribe(user => {
+      this.user = user;
+    });
+
+    this.githubService.getRepos().subscribe(repos => {
+      this.repos = repos;
+      this.loadContributorRepos();
+    });
+
+    
+  }
+
+  loadContributorRepos() {
+    this.githubService.getRepos2().subscribe(contributorRepos => {
+      var temp = contributorRepos as any[];
+      this.repos.push(temp.find((repo) => repo.name == "CMPG223-POS"));
+    });
+  }
 
   ngOnInit(): void {
   }
