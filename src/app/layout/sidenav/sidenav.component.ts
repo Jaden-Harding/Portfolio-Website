@@ -20,5 +20,13 @@ export class SidenavComponent implements OnInit {
   gitProjects() {
     this.router.navigate(['/projects']);
   }
+  
+  education() {
+    this.router.navigate(['/education']);
+  }
+
+  personal() {
+    this.router.navigate(['/personal']);
+  }
 
 }

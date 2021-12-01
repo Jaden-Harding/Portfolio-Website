@@ -1,12 +1,13 @@
 .sidenav-content {
   display: flex;
   height: 100%;
+  z-index: 6;
   align-items: center;
   justify-content: center;
 }
 
 .sidenav {
-  width: 250px;
+  width: 300px;
   padding: 20px;
 }
 

@@ -8,6 +8,14 @@
                 <mat-icon class="navicon">home</mat-icon>
                 <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Home</span>
               </a>
+              <a mat-list-item (click)="personal(); drawer.close();" style="cursor: pointer; margin-top: 20px;" >
+                <mat-icon class="navicon">person</mat-icon>
+                <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Personal</span>
+              </a>
+              <a mat-list-item (click)="education(); drawer.close();" style="cursor: pointer; margin-top: 20px;" >
+                <mat-icon class="navicon">school</mat-icon>
+                <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Education</span>
+              </a>
               <a mat-list-item (click)="gitProjects(); drawer.close();" style="cursor: pointer; margin-top: 20px;" >
                 <mat-icon class="navicon">article</mat-icon>
                 <span class="text-dark" style="margin-left: 45px; font-size: 30px; line-height: 30px;">Projects</span>

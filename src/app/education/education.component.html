@@ -1,0 +1,90 @@
+<app-sidenav>
+    <app-flex-layout-wrapper>
+        <div fxLayout="column" >
+            <div class="name-container" style="margin-top: 20px; margin-bottom: 40px;">Education</div>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        Bsc Computer Science & Information Systems
+                        </mat-panel-title >
+                        <mat-panel-description style="flex-grow: 0; font-size:17px;">
+                        2019-Present
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;" >Institution: North-West University</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                        Web Developer Bootcamp
+                        </mat-panel-title>
+                        <mat-panel-description style="flex-grow: 0; font-size:17px;">
+                        In progress
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Institution: Udemy.com</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        Learn Angular 4 from Scratch
+                        </mat-panel-title>
+                        <mat-panel-description style="flex-grow: 0; font-size:17px;"> 
+                        2021
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Institution: Udemy.com</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+                <div class="name-container color: #eeecec;" style="margin-top: 40px; margin-bottom: 40px; width: 241.68px;">Skills</div>
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        Experience with various technologies
+                        </mat-panel-title>
+                        <mat-panel-description ></mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Angular, NodeJS, .Net, HTML, CSS, Typescript, Java, Material Design, Bootstrap and Javascript</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        Management skills
+                        </mat-panel-title>
+                        <mat-panel-description ></mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Core skills such as team management, organisation, planning and effective execution</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        Social skills
+                        </mat-panel-title>
+                        <mat-panel-description ></mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Soft skills such as including, encouraging and communicating with team members</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title style="font-size:17px;">
+                        GitHub for source control
+                        </mat-panel-title>
+                        <mat-panel-description ></mat-panel-description>
+                    </mat-expansion-panel-header >
+                    <p style="font-style: oblique; color: #eeecec; font-size:17px;">Used in team and individual projects. See <a style="cursor: pointer; font-weight:500;" (click)="projects()">GitHub projects</a></p>
+                    
+                    </mat-expansion-panel>
+                </mat-accordion>
+        </div>
+    </app-flex-layout-wrapper>
+</app-sidenav>
