@@ -9,14 +9,20 @@ import { Router } from '@angular/router';
 export class EducationComponent implements OnInit {
 
   panelOpenState = false;
+  loading = true;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.doneLoading();
   }
 
   projects() {
     this.router.navigate(["/projects"]);
+  }
+
+  doneLoading() {
+    this.loading = false;
   }
 
 }

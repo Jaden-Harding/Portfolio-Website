@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalComponent implements OnInit {
 
+  loading = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.doneLoading();
+  }
+
+  doneLoading() {
+    this.loading= false;
   }
 
 }

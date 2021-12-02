@@ -1,35 +1,41 @@
-<app-sidenav>
-    <app-flex-layout-wrapper>
-        <div fxLayout="column">
-            <div class="name-container" style="margin-top: 20px; margin-bottom: 40px;">Personal Information</div>
-            <div fxLayout="row" class="text-container">
-                <div>Full Name:</div>
-                <div class="text-personal">Jaden Ross Harding</div>
+<div *ngIf="loading"  >
+    <app-load-spinner></app-load-spinner>
+</div>
+<div *ngIf="!loading">
+    <app-sidenav>
+        <app-flex-layout-wrapper>
+            <div fxLayout="column">
+                <div class="name-container" style="margin-top: 20px; margin-bottom: 40px;">Personal Information</div>
+                <div fxLayout="row" class="text-container">
+                    <div>Full Name:</div>
+                    <div class="text-personal">Jaden Ross Harding</div>
+                </div>
+                <div fxLayout="row" class="text-container">
+                    <div>Date of Birth:</div>
+                    <div class="text-personal">30 April 1999</div>
+                </div>
+                <div fxLayout="row" class="text-container">
+                    <div>Gender:</div>
+                    <div class="text-personal">Male</div>
+                </div>
+                <div fxLayout="row" class="text-container">
+                    <div>Nationality:</div>
+                    <div class="text-personal">South African</div>
+                </div>
+                <div fxLayout="row" class="text-container">
+                    <div>Marital status:</div>
+                    <div class="text-personal">Single</div>
+                </div>
+                <div fxLayout="row" class="text-container">
+                    <div>Email address:</div>
+                    <div class="text-personal">harding.jaden@gmail.com</div>
+                </div>
+                <div fxLayout="row" class="text-container" style="border-bottom: none;">
+                    <div>Location:</div>
+                    <div class="text-personal">Potchefstroom, South Africa</div>
+                </div>
             </div>
-            <div fxLayout="row" class="text-container">
-                <div>Date of Birth:</div>
-                <div class="text-personal">30 April 1999</div>
-            </div>
-            <div fxLayout="row" class="text-container">
-                <div>Gender:</div>
-                <div class="text-personal">Male</div>
-            </div>
-            <div fxLayout="row" class="text-container">
-                <div>Identity number:</div>
-                <div class="text-personal">9904305225082</div>
-            </div>
-            <div fxLayout="row" class="text-container">
-                <div>Marital status:</div>
-                <div class="text-personal">Single</div>
-            </div>
-            <div fxLayout="row" class="text-container">
-                <div>Email address:</div>
-                <div class="text-personal">harding.jaden@gmail.com</div>
-            </div>
-            <div fxLayout="row" class="text-container" style="border-bottom: none;">
-                <div>Location:</div>
-                <div class="text-personal">Potchefstroom, South Africa</div>
-            </div>
-        </div>
-    </app-flex-layout-wrapper>
-</app-sidenav>
+        </app-flex-layout-wrapper>
+    </app-sidenav>
+    
+</div>

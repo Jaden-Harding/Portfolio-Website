@@ -13,6 +13,7 @@ import { GithubProjectsComponent } from './github-projects/github-projects.compo
 import { SidenavComponent } from './layout/sidenav/sidenav.component';
 import { EducationComponent } from './education/education.component';
 
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
@@ -21,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PersonalComponent } from './personal/personal.component';
+import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { PersonalComponent } from './personal/personal.component';
     SidenavComponent,
     GithubProjectsComponent,
     EducationComponent,
-    PersonalComponent
+    PersonalComponent,
+    LoadSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { PersonalComponent } from './personal/personal.component';
     HttpClientModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

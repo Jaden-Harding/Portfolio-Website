@@ -1,4 +1,5 @@
-<div style="height: 100%" fxFlex="100" fxLayout="row">
+<div [@appearState]="stateName">
+  <div style="height: 100%" fxFlex="100" fxLayout="row">
     <div
       fxFlex="100"
       fxFlexOffset="0"
@@ -9,4 +10,6 @@
       style="border: solid 0px #000000;">
       <ng-content></ng-content>
     </div>
+</div>
+
 </div>

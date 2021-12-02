@@ -11,6 +11,7 @@ export class GithubProjectsComponent implements OnInit {
 
   user: any;
   repos: any;
+  loading = true;
 
 
   constructor(private githubService: GithubService) {
@@ -22,14 +23,13 @@ export class GithubProjectsComponent implements OnInit {
       this.repos = repos;
       this.loadContributorRepos();
     });
-
-    
   }
 
   loadContributorRepos() {
     this.githubService.getRepos2().subscribe(contributorRepos => {
       var temp = contributorRepos as any[];
       this.repos.push(temp.find((repo) => repo.name == "CMPG223-POS"));
+      this.loading = false;
     });
   }
 

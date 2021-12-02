@@ -1,0 +1,10 @@
+.spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #b0bec5;
+}
+
+.center-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
